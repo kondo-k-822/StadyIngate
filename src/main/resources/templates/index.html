@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <title>トップページ</title>
+</head>
+<body>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<!--<section layout:fragment="content">-->
+    <div class="text-center">
+        <H1 class="h1">アノテーション学習用</H1>
+        <p>学習スタート</p>
+        <p th:text="${serviceString}"></p>
+        <a class="nav-link" th:href="@{/tasks/form}">入力フォーム</a>
+        <a class="nav-link" th:href="@{/tasks/list}">入力データリスト</a>
+    </div>
+<!--</section>-->
+</body>
+</html>
